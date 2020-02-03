@@ -72,7 +72,6 @@
 \end{frame} 
 
 
-\end{frame}
 \begin{frame}[fragile]{Running on Server}
     \begin{itemize}
         \item \code{ssh} tunneling allows accessing web services running on a server.
@@ -150,11 +149,11 @@
         \end{column}
         \begin{column}{0.49\textwidth}
 
-            \begin{minted}[autogobble,fontsize=\scriptsize,bgcolor=cblak,breaklines=true]{python}}
+            \begin{minted}[autogobble,fontsize=\scriptsize,bgcolor=cblak,breaklines=true]{python}
                 def histogram(x,bins=10):
                     __ = plt.hist(x,bins=bins)
             \end{minted}
-            \begin{minted}[autogobble,fontsize=\scriptsize,bgcolor=cblak,breaklines=true]{python}}
+            \begin{minted}[autogobble,fontsize=\scriptsize,bgcolor=cblak,breaklines=true]{python}
                 x = np.random.normal(0,1,1000)
                 histogram(x,bins=100)
             \end{minted}
@@ -172,7 +171,7 @@
         \end{column}
         \begin{column}{0.59\textwidth}
 
-            \begin{minted}[autogobble,fontsize=\scriptsize,bgcolor=cblak,breaklines=true]{python}}
+            \begin{minted}[autogobble,fontsize=\scriptsize,bgcolor=cblak,breaklines=true]{python}
                 class Histogram():
                     def __init__(self,x,bins=10,weights=None):
                         H,be,bv = np.histogram(x,bins=bins)
@@ -185,7 +184,7 @@
                         ax.plot(self.H,ls='steps')
             \end{minted}
 
-            \begin{minted}[autogobble,fontsize=\scriptsize,bgcolor=cblak,breaklines=true]{python}}
+            \begin{minted}[autogobble,fontsize=\scriptsize,bgcolor=cblak,breaklines=true]{python}
                 x = np.random.normal(0,1,1000)
                 h = Histogram(x,bins=100)
                 h.plot()
@@ -244,17 +243,14 @@
                 \item \code{~/.config/matplotlib/stylelib/mystyle.mplstyle} file
                 \item In the code use \code{plt.style.use("mystyle")}
             \end{itemize}
-            \begin{itemize}
-                \item S
-            \end{itemize}
         \end{column}
         \begin{column}{0.40\textwidth}
-                \only<1>{\includegraphics[width=0.88\linewidth]{images/demo_fit_slide.png}}
+                \only<1>{\includegraphics[width=0.88\linewidth]{images/demo_fit_light.png}}
                 \only<2>{\includegraphics[width=0.88\linewidth]{images/demo_fit_default.png}}
-                \only<3>{\includegraphics[width=0.88\linewidth]{images/demo_fit_light.png}}
-                \only<4>{\includegraphics[width=0.88\linewidth]{images/demo_hist_slide.png}}
+                \only<3>{\includegraphics[width=0.88\linewidth]{images/demo_fit_slide.png}}
+                \only<4>{\includegraphics[width=0.88\linewidth]{images/demo_hist_light.png}}
                 \only<5>{\includegraphics[width=0.88\linewidth]{images/demo_hist_default.png}}
-                \only<6>{\includegraphics[width=0.88\linewidth]{images/demo_hist_light.png}}
+                \only<6>{\includegraphics[width=0.88\linewidth]{images/demo_hist_slide.png}}
         \end{column}
     \end{columns}
 \end{frame} 
